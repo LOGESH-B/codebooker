@@ -59,7 +59,7 @@ function Home() {
         ) {
             notify(JSON.parse(localStorage.getItem('user')).username);
         }
-    }, []);
+    }, [location.state]);
 
     const matches = useMediaQuery('(max-width:700px)');
     return (
